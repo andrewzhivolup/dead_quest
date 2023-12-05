@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { FirstPage } from "./pages/1-page";
 
