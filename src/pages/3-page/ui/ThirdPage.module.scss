@@ -1,0 +1,27 @@
+.ThirdPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+:root {
+  --btn-size: 100px;
+}
+
+.QuestButton {
+  width: var(--btn-size) !important;
+  height: var(--btn-size);
+  margin: auto;
+}
+
+.QuestLogo {
+  width: var(--btn-size);
+  height: var(--btn-size);
+}
+
+.ProgressBar{
+  padding: 5px;
+}
