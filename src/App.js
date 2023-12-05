@@ -10,6 +10,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<FirstPage/>}/>
                     <Route path="75489384" element={<SecondPage/>}/>
+                    <Route path="38109423" element={<FirstPage/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

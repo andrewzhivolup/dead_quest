@@ -1,8 +1,17 @@
 import React from "react";
 import cls from "./SecondPage.module.scss";
-import {Progress} from "antd";
+import {Button, Progress} from "antd";
+import qrcode from "qrcode";
+import {QuestionCircleOutlined} from "@ant-design/icons";
+
 
 const SecondPage = () => {
+    const print = () => {
+        qrcode.toDataURL('38109423`', function (err, code) {
+            if (err) return console.log("error occurred")
+            console.log(code)
+        })
+    }
 
     return (
         <div className={cls.SecondPage}>
@@ -12,9 +21,16 @@ const SecondPage = () => {
                 steps={8}
                 showInfo={false}
             />
-            <div>
-
-            </div>
+            <Button
+                className={cls.QuestButton}
+                type="primary"
+                shape="circle"
+                icon={<
+                    QuestionCircleOutlined
+                    style={{fontSize: '50px'}}
+                />}
+            />
+            <div onClick={print}/>
         </div>
     );
 };
