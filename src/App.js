@@ -12,8 +12,9 @@ function App() {
                     <Route path="/" element={<FirstPage/>}/>
                     <Route path="75489384" element={<SecondPage/>}/>
                     <Route path="38109423" element={<ThirdPage/>}/>
-                    <Route path="98128491" element={<ThirdPage/>}/>
-                    <Route path="13122019" element={<ThirdPage/>}/>//atl
+                    <Route path="42763541" element={<div>4</div>}/>
+                    <Route path="13122019" element={<div>5</div>}/>
+                    <Route path="*" element={<div>не существует </div>}/>
                 </Routes>
             </BrowserRouter>
         </div>

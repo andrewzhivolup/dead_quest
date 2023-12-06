@@ -7,21 +7,6 @@
   flex-direction: column;
 }
 
-:root {
-  --btn-size: 100px;
-}
-
-.QuestButton {
-  width: var(--btn-size) !important;
-  height: var(--btn-size);
-  margin: auto;
-}
-
-.QuestLogo {
-  width: var(--btn-size);
-  height: var(--btn-size);
-}
-
-.ProgressBar{
-  padding: 5px;
+.QuestImage {
+  margin: auto !important;
 }

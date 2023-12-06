@@ -1,20 +1,21 @@
 import React from 'react';
 import cls from './ThirdPage.module.scss'
-import {Image, Progress} from "antd";
+import {Image} from "antd";
+import third from "../../../shared/assets/third.jpg";
+import {ProgressBar} from "../../../widgets/ProgressBar";
 
 const ThirdPage = () => {
     return (
         <div className={cls.ThirdPage}>
-            <Progress
-                className={cls.ProgressBar}
-                percent={40}
-                steps={8}
-                showInfo={false}
-            />
-            <Image
-                width={200}
-                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            />
+            <ProgressBar percent={40}/>
+            <div
+                className={cls.QuestImage}
+            >
+                <Image
+                    width={700}
+                    src={third}
+                />
+            </div>
         </div>
     );
 };
