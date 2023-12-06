@@ -1,8 +1,9 @@
 import React from "react";
 import cls from "./FirstPage.module.scss";
-import {Button, Modal, Progress} from "antd";
+import {Button, Modal} from "antd";
 import {QuestionCircleOutlined} from "@ant-design/icons";
 import {useNavigate} from "react-router-dom";
+import {ProgressBar} from "../../../widgets/ProgressBar";
 
 const FirstPage = () => {
     const navigate = useNavigate();
@@ -27,12 +28,7 @@ const FirstPage = () => {
 
     return (
         <div className={cls.FirstPage}>
-            <Progress
-                className={cls.ProgressBar}
-                percent={10}
-                steps={8}
-                showInfo={false}
-            />
+            <ProgressBar percent={10}/>
             <Button
                 className={cls.QuestButton}
                 type="primary"

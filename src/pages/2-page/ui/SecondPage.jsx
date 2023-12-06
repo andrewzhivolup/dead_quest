@@ -1,8 +1,9 @@
 import React from "react";
 import cls from "./SecondPage.module.scss";
-import {Button, Progress} from "antd";
+import {Button} from "antd";
 import qrcode from "qrcode";
 import {QuestionCircleOutlined} from "@ant-design/icons";
+import {ProgressBar} from "../../../widgets/ProgressBar";
 
 
 const SecondPage = () => {
@@ -15,12 +16,7 @@ const SecondPage = () => {
 
     return (
         <div className={cls.SecondPage}>
-            <Progress
-                className={cls.ProgressBar}
-                percent={20}
-                steps={8}
-                showInfo={false}
-            />
+            <ProgressBar percent={20}/>
             <Button
                 className={cls.QuestButton}
                 type="primary"
