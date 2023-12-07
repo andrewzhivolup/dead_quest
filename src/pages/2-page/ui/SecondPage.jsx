@@ -25,6 +25,16 @@ const SecondPage = () => {
                     QuestionCircleOutlined
                     style={{fontSize: '50px'}}
                 />}
+                onClick={
+                    () => {
+                        const click = localStorage.getItem('click');
+                        if (!click) {
+                            localStorage.setItem('click', 1);
+                        } else {
+                            localStorage.setItem('click', +localStorage.getItem('click') + 1);
+                        }
+                    }
+                }
             />
             <div onClick={print}/>
         </div>
