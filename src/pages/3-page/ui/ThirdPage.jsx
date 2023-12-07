@@ -6,7 +6,7 @@ import {ProgressBar} from "../../../widgets/ProgressBar";
 
 const ThirdPage = () => {
     return (
-        <div className={cls.ThirdPage}>
+        <div className={'Page'}>
             <ProgressBar percent={40}/>
             <div
                 className={cls.QuestImage}

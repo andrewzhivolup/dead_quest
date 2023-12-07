@@ -27,7 +27,7 @@ const FirstPage = () => {
     };
 
     return (
-        <div className={cls.FirstPage}>
+        <div className={'Page'}>
             <ProgressBar percent={10}/>
             <Button
                 className={cls.QuestButton}
