@@ -1,5 +1,6 @@
 import "./App.scss";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {ZerothPage} from "./pages/0-page";
 import {FirstPage} from "./pages/1-page";
 import {SecondPage} from "./pages/2-page";
 import {ThirdPage} from "./pages/3-page";
@@ -28,6 +29,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={needDate > 0 ? <Gift/> : <FirstPage/>}/>
+                    <Route path="00000000" element={needDate > 0 ? <Gift/> : <ZerothPage/>}/>
                     <Route path="75489384" element={needDate > 0 ? <Gift/> : <SecondPage/>}/>
                     <Route path="38109423" element={needDate > 0 ? <Gift/> : <ThirdPage/>}/>
                     <Route path="42763541" element={needDate > 0 ? <Gift/> : <FourthPage/>}/>
