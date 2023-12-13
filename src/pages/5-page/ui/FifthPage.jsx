@@ -8,7 +8,7 @@ const {Title} = Typography;
 const FifthPage = () => {
     const navigate = useNavigate();
     const next = () => {
-        navigate("/85301395");
+        navigate("/52135663");
     };
     const [_, setUserData] = useState(0);
 
