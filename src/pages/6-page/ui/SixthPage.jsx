@@ -13,7 +13,7 @@ const SixthPage = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setBool(!bool);
+            setBool(bool => !bool);
         }, 616 * 1000)
     }, []);
 
