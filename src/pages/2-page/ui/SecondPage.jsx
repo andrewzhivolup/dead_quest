@@ -8,7 +8,7 @@ import {ProgressBar} from "../../../widgets/ProgressBar";
 
 const SecondPage = () => {
     const print = () => {
-        qrcode.toDataURL('38109423`', function (err, code) {
+        qrcode.toDataURL('38109423', function (err, code) {
             if (err) return console.log("error occurred")
             console.log(code)
         })
